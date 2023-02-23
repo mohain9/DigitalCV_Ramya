@@ -36,7 +36,6 @@ with col2:
     st.write(description)
     st.download_button(
         label="Download Resume",
-        data=PDFbyte,
         file_name=cv.pdf,
         mime="applicaton/octet-stream",
     )
