@@ -4,16 +4,14 @@ from PIL import Image
 
 
 #path settings                      
-current_dir= Path(__file__).parent if "__file__" in locals() else Path.cwd()
-css_file= current_dir/"main.css"
-resume_file= current_dir/"cv.pdf"
-profile_pic= current_dir/"profile-pic.png"
+css_file= "main.css"
+resume_file= "cv.pdf"
+profile_pic= "profile-pic.png"
 
 #general settings
 
 page_title ="Ramya | DigitalCV"
 page_icon = ":wave:"
-#name= "Ramya MohanKumar"
 description= """An immediate joiner wants to learn constantly at the workplace and use the knowledge thus obtained in adding at least as much value to the Organization as I derive from it, without Compromising on Quality or Personal Ethics."""
 email="ramya.mohankumar86@gmail.com"
 phone = "+49 015731080133"
@@ -21,10 +19,6 @@ address="Worringer Str., Düsseldorf, Deutschland"
 social_media={
     "Youtube": "https://youtube.com/",
     "LinkedIn": "https://www.linkedin.com/in/mohankumar-n/",
-}
-projects= {
-    "Dashboards - Comparing sales across two call agents": "https://youtub/"
-    "Desktop Application",
 }
 
 st.set_page_config(layout="wide",page_title=page_title,page_icon=page_icon)
