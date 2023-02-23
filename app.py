@@ -4,7 +4,7 @@ from PIL import Image
 
 
 #path settings                      
-css_file= "main.css"
+
 resume_file= "cv.pdf"
 profile_pic= "profile-pic.png"
 
@@ -25,11 +25,6 @@ st.set_page_config(layout="wide",page_title=page_title,page_icon=page_icon)
 st.title("Ramya MohanKumar")
 
 #load css, pdf & profile pic
-with open (css_file) as f:
-    st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
-with open (resume_file,"rb") as pdf_file:
-    PDFbyte=pdf_file.read()
-    profile_pic=Image.open(profile_pic)
     
 #hero section
 col1,col2 = st.columns(2,gap="small")
@@ -42,7 +37,7 @@ with col2:
     st.download_button(
         label="Download Resume",
         data=PDFbyte,
-        file_name=resume_file.name,
+        file_name=cv.pdf,
         mime="applicaton/octet-stream",
     )
     st.write("...",email)
