@@ -18,8 +18,7 @@ email="ramya.mohankumar86@gmail.com"
 phone = "+49 015731080133"
 address="Worringer Str., Düsseldorf, Deutschland"
 social_media={
-    "Youtube": "https://youtube.com/",
-    "LinkedIn": "https://www.linkedin.com/in/mohankumar-n/",
+    "LinkedIn": "https://www.linkedin.com/in/ramya-mohankumar-4918b91a3/",
 }
 
 st.set_page_config(layout="wide",page_title=page_title,page_icon=page_icon)
